@@ -1,0 +1,285 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background:linear-gradient(120deg,#966261 0%, #FCA4A3 100%);
+}
+
+body{
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    background-color: #e0cfd4;
+    color: rgb(255, 255, 255);
+    text-align:inherit
+    
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+div{
+    width: 100%;
+}
+
+.buttons{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons li{
+    margin: 0 20px;
+}
+
+.icons{
+    width: 15%;
+    
+}
+
+.icons a{
+    font-size:large ;
+    position:relative;
+    top:-10px;
+}
+
+.icons p{
+    text-shadow: 1px 1px 2px pink;
+    color:rgb(255, 255, 255);
+}
+nav a {
+    font-family:'Optima';
+    text-decoration: none;
+    text-shadow: 1px 1px 2px pink;
+    color:rgb(255, 255, 255);
+    font-size: xx-large;
+}
+
+
+nav a:hover {
+    color:rgb(245, 189, 228);
+}
+
+
+
+#icon_Contact{
+    height: 30px;
+    width: 30px;
+    padding: 10px
+}
+
+.container{
+    margin-top: 100px;
+    display:flex;
+}
+
+.container2{
+    margin-top: 50px;
+    display:flex;
+}
+
+.card{
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 400px;
+    background-color:#FCA4A3;
+    flex: 1;
+    transition: .3s all ease;
+    
+}
+
+.card:hover{
+    flex: 1.5;
+    background-color: aquamarine;
+}
+
+.card img{
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+}
+
+footer{
+    background:linear-gradient(120deg,#966261 0%, #FCA4A3 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    bottom: 0;
+}
+
+/* Container do Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de Contato */
+.footer-contact h3 {
+    font-size: 1.5em;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Estilo de Redes Sociais */
+.footer-social h4 {
+    font-size: 1.2em;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    margin: 5px 0;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #f39c12;
+}
+
+/* Estilo do Copyright */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+h3{
+    text-align: center;
+    font-size: xx-large;
+    color: #FF819F;
+    text-shadow: white 3px 1px 3px;
+}
+
+main {
+    margin:auto;
+    margin-top:200px;
+    width: 90%;
+    justify-self: center;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(199, 166, 171);
+}
+
+/* Base styles remain unchanged */
+
+/* Styles for screens 720px and below */
+@media (max-width: 720px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .icons {
+        width: 100%; /* Make icons full width */
+        text-align: center; /* Center icons */
+    }
+
+    .card {
+        margin: 10px 0; /* Add margin for spacing */
+        height: auto; /* Allow cards to adjust height */
+    }
+
+    h3 {
+        font-size: large; /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: xx-large; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Styles for screens between 721px and 1200px */
+@media (min-width: 721px) and (max-width: 1200px) {
+    nav ul {
+        flex-direction: row; /* Keep navigation items in a row */
+    }
+
+    .buttons {
+        flex-direction: row; /* Keep buttons in a row */
+    }
+
+    .card {
+        margin: 10px; /* Add margin for spacing */
+        height: 350px; /* Set a fixed height */
+    }
+
+    h3 {
+        font-size: xx-large; /* Adjust font size */
+    }
+
+    h1 {
+        font-size: xx-large; /* Adjust font size */
+    }
+}
+
+/* Styles for screens between 1201px and 1900px */
+@media (min-width: 1201px) and (max-width: 1900px) {
+    .container {
+        justify-content: space-around; /* Space out items evenly */
+    }
+
+    .card {
+        height: 400px; /* Maintain the original height */
+    }
+
+    h3 {
+        font-size: xx-large; /* Keep the font size larger */
+    }
+
+    h1 {
+        font-size: xx-large; /* Keep the font size larger */
+    }
+}
+
+/* Styles for screens above 1900px */
+@media (min-width: 1901px) {
+    .container {
+        justify-content: space-between; /* Space out items */
+    }
+
+    .card {
+        height: 450px; /* Increase height for larger screens */
+    }
+
+    h3 {
+        font-size: xx-large; /* Keep the font size larger */
+    }
+
+    h1 {
+        font-size: xxx-large; /* Increase font size for larger screens */
+    }
+}
